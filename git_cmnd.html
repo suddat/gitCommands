@@ -10,14 +10,30 @@
 <body>
 	<div>
 		<ul style="list-style-type:circle bold">
-			<li> <b> git commit </b> <span> - exactly like svn. (svn commit -m) </span></li>
-			<li> <b> git add filename/filenames </b> <span> - to add file to repository. </span></li>
-			<li> <b> git diff </b> <span> - to find difference between two versions of file. </span></li>
-			<li> <b> git checkout HEAD filename </b> <span> - Discards changes in the working directory. (rm filename && svn up) </span> </li>
-			<li> <b> git reset HEAD filename </b> <span> - Unstages file changes in the staging area. </span> </li>
-			<li> <b> git reset SHA </b> <span> - Can be used to reset to a previous commit in your commit history. (svn -r revision no) </span> </li>
-			<li> <h1> 2nd Part will be about Branch, Merge and TeamWork Commands </h1> </li>
+			<li> <h3> 1st Part Basic Commands </h3> </li>
+				<li> <b> git commit : </b> <span> - exactly like svn. (svn commit -m) </span></li>
+				<li> <b> git add filename/filenames : </b> <span> - to add file to repository. </span></li>
+				<li> <b> git diff : </b> <span>  to find difference between two versions of file. </span></li>
+				<li> <b> git checkout HEAD filename : </b> <span>  Discards changes in the working directory. (rm filename && svn up) </span> </li>
+				<li> <b> git reset HEAD filename : </b> <span>  Unstages file changes in the staging area. </span> </li>
+				<li> <b> git reset SHA : </b> <span>  Can be used to reset to a previous commit in your commit history. (svn -r revision no) </span> </li>
+			<li> <h3> 2nd Part will be about Branch, Merge and TeamWork Commands </h3> </li>
+				<li> <b> git branch : </b> <span>  shows the branch of repository. (branches are nothing but a completed version, to add on something new on the completed version create a branch, such that if anything goes wrong on the new version can be reverted back to the main branch the completed version will be called as Master branch.) </span></li>
+
+				<li> <b> git checkout branch_name : </b> <span>  with 'checkout' can switch to new branch_name and it wont affect the master now, both have the same commit code, but post switching the git checkout, master will remain unaffected. </span></li>
+				<li> <b> git merge branch_name : </b> <span>  merge from new version to master version because branch_name has the latest code. </span></li>
+				<li> <b> git checkout HEAD filename : </b> <span>  Discards changes in the working directory. (rm filename && svn up) </span> </li>
+				<li> <b> git branch -d branch_name : </b> <span>  now the changes has been merged into master, purpose of fencing is done, so delete it with this command. </span> </li>
+				<li> <b>git clone: </b> <span> Creates a local copy of a remote.</span> </li>
+				<li> <b>git remote -v: </b> <span> Lists a Git project's remotes.</span> </li>
+				<li> <b>git fetch: </b> <span> Fetches work from the remote into the local copy.</span> </li>
+				<li> <b>git merge origin/master: </b> <span> Merges origin/master into your local branch.</span> </li>
+				<li> <b>git push origin <branch_name>: </b> <span> Pushes a local branch to the origin remote.</span> </li>
 		</ul>
 	</div>
 </body>
 </html>
+
+
+
+
